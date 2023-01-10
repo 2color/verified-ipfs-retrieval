@@ -1,12 +1,12 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import Button from '@/components/buttons/Button';
+import Button from '@/components/buttons/Button'
 
 export default function VerifiedImage() {
-  const [isFetching, setIsFetching] = React.useState(false);
+  const [isFetching, setIsFetching] = React.useState(false)
 
   const onFetchCID = React.useCallback(async () => {
-    setIsFetching(true);
+    setIsFetching(true)
     const request = await fetch(
       'https://bafybeicklkqcnlvtiscr2hzkubjwnwjinvskffn4xorqeduft3wq7vm5u4.ipfs.cf-ipfs.com/',
       {
@@ -14,13 +14,13 @@ export default function VerifiedImage() {
           Accept: 'application/vnd.ipld.car',
         },
       }
-    );
+    )
     if (!request.ok) {
-      throw new Error('failed to fetch image');
+      throw new Error('failed to fetch image')
     }
     // TODO: verify the response and render
-    setIsFetching(false);
-  }, [setIsFetching]);
+    setIsFetching(false)
+  }, [setIsFetching])
 
   return (
     <div>
@@ -30,5 +30,5 @@ export default function VerifiedImage() {
         </Button>
       </div>
     </div>
-  );
+  )
 }

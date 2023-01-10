@@ -1,9 +1,9 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import Layout from '@/components/layout/Layout';
-import ArrowLink from '@/components/links/ArrowLink';
-import Seo from '@/components/Seo';
-import VerifiedImage from '@/components/VerifiedImage';
+import Layout from '@/components/layout/Layout'
+import ArrowLink from '@/components/links/ArrowLink'
+import Seo from '@/components/Seo'
+import VerifiedImage from '@/components/VerifiedImage'
 
 /**
  * SVGR Support
@@ -12,7 +12,7 @@ import VerifiedImage from '@/components/VerifiedImage';
  * You can override the next-env if the type is important to you
  * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
  */
-import IPFS from '~/svg/ipfs.svg';
+import IPFS from '~/svg/ipfs.svg'
 
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
@@ -39,5 +39,5 @@ export default function HomePage() {
         </section>
       </main>
     </Layout>
-  );
+  )
 }

@@ -13,6 +13,7 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    semi: 'off',
     'no-unused-vars': 'off',
     'no-console': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -81,4 +82,4 @@ module.exports = {
     React: true,
     JSX: true,
   },
-};
+}
