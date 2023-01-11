@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import Layout from '@/components/layout/Layout'
 import ArrowLink from '@/components/links/ArrowLink'
+import UnderlineLink from '@/components/links/UnderlineLink'
 import Seo from '@/components/Seo'
 import VerifiedImage from '@/components/VerifiedImage'
 
@@ -35,6 +36,12 @@ export default function HomePage() {
               </ArrowLink>
             </p>
             <VerifiedImage />
+
+            <footer className='absolute bottom-2 text-gray-700'>
+              <UnderlineLink href='https://github.com/2color/verified-ipfs-retrieval'>
+                Source code
+              </UnderlineLink>
+            </footer>
           </div>
         </section>
       </main>
