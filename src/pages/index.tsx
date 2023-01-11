@@ -38,6 +38,11 @@ export default function HomePage() {
             <VerifiedImage />
 
             <footer className='absolute bottom-2 text-gray-700'>
+              Built with ❤️ by{' '}
+              <UnderlineLink href='https://twitter.com/daniel2color'>
+                Daniel
+              </UnderlineLink>
+              {' | '}
               <UnderlineLink href='https://github.com/2color/verified-ipfs-retrieval'>
                 Source code
               </UnderlineLink>
