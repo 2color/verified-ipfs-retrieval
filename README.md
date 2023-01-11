@@ -26,3 +26,5 @@ CAR files are useful for several reasons:
 Using [trustless gateways](https://github.com/ipfs/specs/blob/main/http-gateways/TRUSTLESS_GATEWAY.md), a CAR file for the CID is requested with the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 
 The response stream is piped into a [`CarReader`](https://github.com/ipld/js-car#carreader), which traverses the DAG and constructs the file from the binary chucks. While the DAG is constructed, the blocks are verified by calculating a hash for each block and comparing it against the block.
+
+**[View the code specific to verified retrieval](https://github.com/2color/verified-ipfs-retrieval/blob/main/src/components/VerifiedImage.tsx)**
