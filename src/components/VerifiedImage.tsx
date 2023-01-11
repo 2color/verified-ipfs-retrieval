@@ -108,7 +108,7 @@ export default function VerifiedImage() {
 }
 
 export async function fetchCar(cid: string, gateway: URL) {
-  const url = `${gateway}/ipfs/${cid}`
+  const url = `${gateway}ipfs/${cid}`
   const res = await fetch(url, {
     method: 'GET',
     headers: {
@@ -126,7 +126,7 @@ export async function fetchCar(cid: string, gateway: URL) {
 }
 
 export async function ipfsFetch(ipfsPath: string): Promise<UnixFSEntry[]> {
-  const gatewayUrl = new URL(`https://ipfs.io`)
+  const gatewayUrl = new URL(`https://ipfs.io/`)
   let cid: string = ipfsPath
   if (ipfsPath.startsWith('/ipfs/')) {
     cid = ipfsPath.substring('/ipfs/'.length)
