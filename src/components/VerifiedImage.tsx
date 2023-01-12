@@ -59,11 +59,11 @@ export default function VerifiedImage() {
   return (
     <div>
       <div className='my-2 flex flex-col justify-center gap-2 '>
-        <pre className=''>{`
-          CIDs to try out
-          Image ${defaultImageCid}
-          Video: ${defaultVideoCid}
-        `}</pre>
+        <pre className='whitespace-prewrap'>
+          {`CIDs to try out
+Image ${defaultImageCid}
+Video: ${defaultVideoCid}`}
+        </pre>
         <input
           type='text'
           placeholder='bafy...'
@@ -99,7 +99,7 @@ export default function VerifiedImage() {
         />
       )}
       {dataUrl && fileMime.includes('video') && (
-        <video controls>
+        <video className='mx-auto' controls>
           <source type={fileMime} src={dataUrl} />
         </video>
       )}
