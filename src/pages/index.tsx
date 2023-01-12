@@ -25,14 +25,15 @@ export default function HomePage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
-      <main>
-        <section className='bg-white'>
+      <main className='bg-gradient-to-t from-red-100 to-cyan-400'>
+        <section className=''>
+          <IPFS className='ml-5 text-8xl' />
           <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
-            <IPFS className='text-8xl' />
-            <h1 className='mt-4'>Verified IPFS Retrieval</h1>
+            <h1 className='m-5 text-teal-700'>Verified IPFS Retrieval</h1>
+
             <p className='mt-2 text-sm text-gray-700'>
               <ArrowLink href='https://github.com/ipfs/specs/blob/main/http-gateways/TRUSTLESS_GATEWAY.md'>
-                See the trustless IPFS Gateway Spec
+                Trustless IPFS Gateway Spec
               </ArrowLink>
             </p>
             <VerifiedImage />

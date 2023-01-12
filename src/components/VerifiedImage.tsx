@@ -58,8 +58,8 @@ export default function VerifiedImage() {
 
   return (
     <div>
-      <div className='my-2 flex flex-col justify-center gap-2 '>
-        <pre className='whitespace-prewrap'>
+      <div className='my-2 flex flex-col flex-nowrap items-center justify-center gap-2	 '>
+        <pre className='whitespace-pre-wrap break-all'>
           {`CIDs to try out
 Image ${defaultImageCid}
 Video: ${defaultVideoCid}`}
