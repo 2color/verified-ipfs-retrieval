@@ -94,7 +94,7 @@ Video: ${defaultVideoCid}`}
         // @eslint-ignore
         <img
           alt='verified image from IPFS'
-          className='my-2 max-w-md'
+          className='my-2 mx-auto max-w-md'
           src={dataUrl}
         />
       )}
